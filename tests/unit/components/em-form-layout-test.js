@@ -18,7 +18,6 @@ test('form rendering', function(assert) {
   assert.equal(component._state, 'inDOM');
   const elem = $(component.element);
 
-  assert.equal(elem.attr("role"), "form", "Has form role.");
   assert.equal(elem.prop('tagName'), 'FORM', "Form got rendered");
   assert.ok(elem.find('button').get(0), "Submit got rendered");
   assert.ok(!component.get('model'), 'Form does not have a model');

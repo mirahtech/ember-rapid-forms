@@ -28,7 +28,6 @@ export default Component.extend({
   tagName: 'form',
   classNameBindings: ['formLayoutClass'],
   attributeBindings: ['role'],
-  role: 'form',
   action: 'submit',
   model: null,
   formLayout: 'form',
